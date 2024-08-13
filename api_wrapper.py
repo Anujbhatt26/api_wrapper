@@ -95,7 +95,7 @@ async def run_command(request: RunCommandRequest):
 
         stdout_output = []
         stderr_output = []
-
+# adasds
         for stdout_line in process.stdout:
             print(stdout_line, end='')
             stdout_output.append(stdout_line)
