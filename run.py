@@ -23,7 +23,7 @@ def main():
     parser.add_argument('--execution-threads', type=int, default=1, help='Number of execution threads')
     args = parser.parse_args()
 
-    # Print individual argument values
+    # Printing individual argument values
     sys.stdout.write(f"Source: {args.source}\n")
     sys.stdout.write(f"Target: {args.target}\n")
     sys.stdout.write(f"Output: {args.output}\n")

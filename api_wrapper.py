@@ -72,7 +72,7 @@ async def run_command(request: RunCommandRequest):
         "--frame-processor", request.frame_processor
     ]
 
-    # Add optional flags and parameters
+    # Adding optional flags and parameters
     if request.keep_fps:
         command.append("--keep-fps")
     if request.skip_audio:
@@ -95,7 +95,7 @@ async def run_command(request: RunCommandRequest):
 
         stdout_output = []
         stderr_output = []
-# adasds
+
         for stdout_line in process.stdout:
             print(stdout_line, end='')
             stdout_output.append(stdout_line)
